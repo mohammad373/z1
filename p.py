@@ -190,20 +190,14 @@ def __target__():
         except:
             sys.exit()
     target3 = my_list.sort()
-    w1 = input(Fore.BLUE + "[!] ~ " + Fore.GREEN + "Pleass Enter Your Number (1 : Print All Requests | 2 : Print Org Requests")
+    w1 = input(Fore.BLUE + "[!] ~ " + Fore.GREEN + "Pleass Enter Your Number (1 : Print All Requests | 2 : Print Org Requests" + Fore.BLUE + "==>  ")
     if w1 == "" or None:
         try:
             print(Fore.RED + "[-] ~ Error : Your Input In None ;(")
             sys.exit()
         except:
             sys.exit()
-    if w1 != "1" or w1 != "2":
-        try:
-            print(Fore.RED + "[-] ~ Error : Your Input Is Not Found ;(")
-            time.sleep(1)
-            sys.exit()
-        except:
-            sys.exit()
+
     if w1 == "1":
         for m in target3:
             target4 = target + "/" + m
@@ -220,4 +214,11 @@ def __target__():
                 print(Fore.GREEN + target6)
             if target7.status_code != 200:
                 None
+    if w1 != "1" or w1 != "2":
+        try:
+            print(Fore.RED + "[-] ~ Error : Your Input Is Not Found ;(")
+            time.sleep(1)
+            sys.exit
+        except:
+            sys.exit()       
 __target__()
