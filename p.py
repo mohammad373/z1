@@ -183,12 +183,12 @@ def __target__():
                 break
             else:
                 my_list.append(i)
-    else:
-        try:
-            print(Fore.RED + "[-] ~ Error : Your Input Is Not Found ;(")
-            sys.exit()
-        except:
-            sys.exit()
+    #else:
+     #   try:
+      #      print(Fore.RED + "[-] ~ Error : Your Input Is Not Found ;(")
+       #     sys.exit()
+        #except:
+         #   sys.exit()
     target3 = my_list.sort()
     w1 = input(Fore.BLUE + "[!] ~ " + Fore.GREEN + "Pleass Enter Your Number (1 : Print All Requests | 2 : Print Org Requests" + Fore.BLUE + "==>  ")
     if w1 == "" or None:
@@ -214,11 +214,11 @@ def __target__():
                 print(Fore.GREEN + target6)
             if target7.status_code != 200:
                 None
-    if w1 != "1" or w1 != "2":
-        try:
-            print(Fore.RED + "[-] ~ Error : Your Input Is Not Found ;(")
-            time.sleep(1)
-            sys.exit
-        except:
-            sys.exit()       
+    #if w1 != "1" or w1 != "2":
+     #   try:
+      #      print(Fore.RED + "[-] ~ Error : Your Input Is Not Found ;(")
+       #     time.sleep(1)
+        #    sys.exit
+        #except:
+         #   sys.exit()       
 __target__()
