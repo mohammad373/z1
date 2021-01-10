@@ -169,12 +169,7 @@ def __target__():
     if target2 == "" or None:
         try:
             print(Fore.RED + "[-] ~ Error : Your Input Is None ;(")
-    if target2.lower() != "y" or target2.lower() != "n":
-        try:
-            print(Fore.RED + "[-] ~ Error : Your Input In Not Found ;(")
-            sys.exit()
-        except:
-            sys.exit()
+   
     if target2.lower() == "n":
         None
     if target2.lower() == "y":
@@ -186,6 +181,12 @@ def __target__():
                 break
             else:
                 my_list.append(i)
+    else:
+        try:
+            print(Fore.RED + "[-] ~ Error : Your Input Is Not Found ;(")
+            sys.exit()
+        except:
+            sys.exit()
     target3 = my_list.sort()
     w1 = input(Fore.BLUE + "[!] ~ " + Fore.GREEN + "Pleass Enter Your Number (1 : Print All Requests | 2 : Print Org Requests")
     if w1 == "" or None:
