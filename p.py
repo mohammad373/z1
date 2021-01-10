@@ -169,7 +169,9 @@ def __target__():
     if target2 == "" or None:
         try:
             print(Fore.RED + "[-] ~ Error : Your Input Is None ;(")
-   
+            sys.exit()
+        except:
+            sys.exit()
     if target2.lower() == "n":
         None
     if target2.lower() == "y":
