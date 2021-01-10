@@ -189,7 +189,7 @@ def __target__():
        #     sys.exit()
         #except:
          #   sys.exit()
-    target3 = my_list.sort()
+    target3 = my_list
     w1 = input(Fore.BLUE + "[!] ~ " + Fore.GREEN + "Pleass Enter Your Number (1 : Print All Requests | 2 : Print Org Requests" + Fore.BLUE + "==>  ")
     if w1 == "" or None:
         try:
